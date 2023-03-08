@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	font-family: "Libre Franklin", sans-serif;
+}
+
+:root {
+	font-size: 62.5%;
+
+	--Blue: hsl(223, 87%, 63%);
+
+	--Pale-Blue: hsl(223, 100%, 88%);
+	--Light-Red: hsl(354, 100%, 66%);
+
+	--Gray: hsl(0, 0%, 59%);
+	--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+.container {
+	max-width: 130rem;
+	margin-inline: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
+.logo {
+	width: 7rem;
+	margin: 5rem auto 4rem;
+}
+
+.hero {
+	padding: 2rem;
+	text-align: center;
+}
+
+.main-text {
+	font-weight: 400;
+	color: var(--Gray);
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.dark {
+	color: var(--Very-Dark-Blue);
+	font-weight: 700;
+}
+
+.info {
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+
+form {
+	display: grid;
+	margin-bottom: 7rem;
+	gap: 1.5rem;
+}
+
+form > input,
+form > button {
+	display: block;
+	height: 5rem;
+	border-radius: 5rem;
+}
+
+form > input {
+	border: 1px solid var(--Pale-Blue);
+	padding: 0 2rem 0 4rem;
+	color: var(--Blue);
+}
+
+form > input {
+	outline-color: var(--Blue);
+}
+
+input::placeholder {
+	color: var(--Pale-Blue);
+	opacity: 0.9;
+}
+
+form > button {
+	border: none;
+	background-color: var(--Blue);
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.3rem;
+	letter-spacing: 0.05rem;
+	cursor: pointer;
+}
+
+form > button:hover {
+	border-color: hsla(223, 87%, 63%, 0.836);
+	background-color: hsla(223, 87%, 63%, 0.836);
+}
+
+.illustration-img {
+	width: 100%;
+	margin-bottom: 7rem;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+	width: 16rem;
+	margin: 0 auto 2rem;
+	font-size: 2rem;
+}
+
+.socials a {
+	border: 1px solid;
+	border-color: hsla(223, 100%, 88%, 0.473);
+	display: flex;
+	place-items: center;
+	padding: 1rem;
+	border-radius: 50%;
+	color: var(--Blue);
+}
+
+.socials a:hover {
+	background-color: var(--Blue);
+	color: #fff;
+}
+
+.copy {
+	color: var(--Gray);
+	text-align: center;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.attribution {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+	color: var(--Blue);
+	margin-bottom: 2rem;
+}
+
+.attribution > a {
+	color: var(--Light-Red);
+}
+
+@media screen and (min-width: 720px) {
+	.logo {
+		width: 10rem;
+		margin: 5rem auto;
+	}
+
+	.main-text {
+		font-size: 4.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.info {
+		font-size: 1.8rem;
+		margin-bottom: 6rem;
+	}
+
+	form {
+		display: grid;
+		margin-bottom: 7rem;
+		max-width: 70rem;
+		margin: 0 auto 8rem;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	form > input,
+	form > button {
+		height: 6rem;
+		border-radius: 6rem;
+	}
+
+	form > input {
+		font-size: 1.8rem;
+	}
+
+	form > button {
+		max-width: 30rem;
+		font-size: 1.5rem;
+	}
+
+	.illustration-img {
+		max-width: 65rem;
+		margin: 0 auto 7rem;
+	}
+
+	.socials {
+		width: 18rem;
+		margin-bottom: 3rem;
+		font-size: 2.5rem;
+	}
+
+	.socials a {
+		padding: 1.3rem;
+	}
+
+	.socials a:hover {
+		background-color: var(--Blue);
+		color: #fff;
+	}
+
+	.copy {
+		font-size: 1.6rem;
+	}
+
+	.attribution {
+		font-size: 1.7rem;
+	}
+}
