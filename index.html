@@ -31,8 +31,17 @@
 
 				<p class="info">Subscribe and get notified</p>
 				<form action="">
-					<input type="email" placeholder="Your email address..." required />
-					<button type="submit">Notify Me</button>
+					<div class="input-con">
+						<input
+							type="email"
+							placeholder="Your email address..."
+							class="input-box"
+							required
+						/>
+						<p class="input-err">Please provide a valid email address</p>
+					</div>
+
+					<button class="btn" type="submit">Notify Me</button>
 				</form>
 				<img
 					src="./images/illustration-dashboard.png"
@@ -56,9 +65,7 @@
 				</a>
 			</div>
 			<p class="copy">&copy; Copyright Ping. All rights reserved.</p>
-		</footer>
 
-		<footer>
 			<p class="attribution">
 				Challenge by
 				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

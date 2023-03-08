@@ -70,20 +70,30 @@ form {
 	gap: 1.5rem;
 }
 
-form > input,
-form > button {
+.input-box,
+.btn {
+	border: 2px solid;
 	display: block;
 	height: 5rem;
 	border-radius: 5rem;
 }
 
-form > input {
+.input-err {
+	font-size: 1.4rem;
+	font-style: italic;
+	color: var(--Light-Red);
+	display: none;
+}
+
+.input-box {
 	border: 1px solid var(--Pale-Blue);
 	padding: 0 2rem 0 4rem;
 	color: var(--Blue);
+	width: 100%;
+	margin-bottom: 1rem;
 }
 
-form > input {
+.input-box {
 	outline-color: var(--Blue);
 }
 
@@ -92,7 +102,7 @@ input::placeholder {
 	opacity: 0.9;
 }
 
-form > button {
+.btn {
 	border: none;
 	background-color: var(--Blue);
 	color: #fff;
@@ -102,7 +112,7 @@ form > button {
 	cursor: pointer;
 }
 
-form > button:hover {
+.btn:hover {
 	border-color: hsla(223, 87%, 63%, 0.836);
 	background-color: hsla(223, 87%, 63%, 0.836);
 }
@@ -115,7 +125,7 @@ form > button:hover {
 .socials {
 	display: flex;
 	justify-content: space-between;
-	width: 16rem;
+	width: 17rem;
 	margin: 0 auto 2rem;
 	font-size: 2rem;
 }
@@ -124,8 +134,10 @@ form > button:hover {
 	border: 1px solid;
 	border-color: hsla(223, 100%, 88%, 0.473);
 	display: flex;
-	place-items: center;
-	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 5rem;
 	border-radius: 50%;
 	color: var(--Blue);
 }
@@ -174,21 +186,30 @@ form > button:hover {
 		display: grid;
 		margin-bottom: 7rem;
 		max-width: 70rem;
-		margin: 0 auto 8rem;
+		margin: 0 auto 4rem;
 		grid-template-columns: 2fr 1fr;
 	}
 
-	form > input,
-	form > button {
-		height: 6rem;
-		border-radius: 6rem;
+	.input-box,
+	.btn {
+		height: 5rem;
+		border-radius: 5rem;
 	}
 
-	form > input {
+	.input-con {
+		height: 10rem;
+	}
+
+	.input-box {
 		font-size: 1.8rem;
 	}
 
-	form > button {
+	.input-err {
+		text-align: left;
+		padding-left: 5rem;
+	}
+
+	.btn {
 		max-width: 30rem;
 		font-size: 1.5rem;
 	}
@@ -202,10 +223,6 @@ form > button:hover {
 		width: 18rem;
 		margin-bottom: 3rem;
 		font-size: 2.5rem;
-	}
-
-	.socials a {
-		padding: 1.3rem;
 	}
 
 	.socials a:hover {
